@@ -1,0 +1,32 @@
+{
+  "name": "qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dqbd/tiktoken": "^1.0.21",
+    "@langchain/google-genai": "^0.2.10",
+    "@langchain/openai": "^0.5.11",
+    "@langchain/pinecone": "^0.2.0",
+    "@pinecone-database/pinecone": "^5.1.2",
+    "body-parser": "^2.2.0",
+    "chromadb": "^2.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "langchain": "^0.3.27",
+    "mammoth": "^1.9.1",
+    "multer": "^2.0.0",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.10",
+    "pdf.js-extract": "^0.2.1"
+  }
+}
