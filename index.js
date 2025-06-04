@@ -43,6 +43,10 @@ const pineconeIndex = pinecone.Index(process.env.VECTOR_DATABASE_INDEX_NAME);
 //  pdf.js-extract
 const pdfExtract = new PDFExtract();
 
+app.get("/", async (req, res) => {
+  res.status(200).json({ message: "Backend running successfully!" });
+});
+
 app.post("/upload-document", upload.single("document"), async (req, res) => {
   if (!req.file) {
     return res.status(400).send("No document uploaded.");
